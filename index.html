@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+    <link rel="stylesheet" href="./css/master.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <header>
+       <img class="header-logo"src="./imgs/brown-open.svg" alt=""> 
+       
+       <a href="#" for="check" class="checkbtn">
+        <img src="./imgs/icon.png" alt="">
+       </a>
+        <ul class="ul-items">
+            <li><a href="#">VENUES</a></li>
+            <li><a href="#">BECOME A VENUE PARTNER</a></li>
+        </ul>
+    </header>
+
+    <aside class="mobile-sidebar" id="m-s">
+        <nav class="top-nav">
+            <img src="./imgs/white-open.svg" alt="">
+            <img src="./imgs/close-logo.png" alt="" onclick="close_sidebar();">
+        </nav>
+        <ul>
+            <li><a href="#">Venues</a></li>
+            <li><a href="#">Become<br> a Venue Partener</a></li>
+            <li><a href="#">Venue Scouting</a></li>
+        </ul>
+    </aside>
+
+    <section class="content-with-image">
+        <p>Open is a platform offering exclusive access to the world's rarest spaces, nurturing lasting connections between people and place.</p>
+        <img class="image" src="./imgs/WLG_8690 1.svg" alt="">
+    </section>
+    
+    <section class="cover-color">
+        <div class="subtitle-btn">
+            <span>Venues</span>
+            <button>VIEW ALL</button>
+        </div>
+    </section>
+
+    <section class="img-description">
+        <div class="row-img">
+            <div class="">
+                <img src="./imgs/car-left.svg" alt="">
+                <span>Superstition Mountains</span>
+            </div>
+            <div class="">
+                <img src="./imgs/chair-middle.svg" alt="">
+                <span class="dif-color">Joshua Tree</span>
+            </div>
+            <div class="">
+                <img src="./imgs/tables-right.svg"  alt="">
+                <span class="diff-color">North Scottsdale</span>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section class="describtion-btn">
+        <span class="small-tittle">LOOKING FOR SOMETHING ELSE?</span>
+        <span class="second-tittle">I want to host
+             <span class="inner-span">
+                a corporate event
+            </span>
+            in the <span class="inner-span">mountains</span> in <span class="inner-span">California.</span>
+        </span>
+        <button>INQUIRE NOW</button>    
+    </section> -->
+
+    <section class="describtion-btn">
+        <span class="small-tittle">LOOKING FOR SOMETHING ELSE?</span>
+        <h2>
+            I want to host
+            <div class="inline-dropdown">
+                <span class="selected-value" id='selected-value'>a corporate event</span>
+                <div class="options">
+                    <a href="#" data-value="1" id="link-1">Link #1</a>
+                    <a href="#" data-value="2" id="link-2">Link #2</a>
+                </div>
+            </div>
+        </h2>
+
+        <h2>
+            in the
+            <div class="inline-dropdown">
+                <span class="selected-value" id='selected-value'>mountains</span>
+                <div class="options">
+                    <a href="#" data-value="1" class="">used</a>
+                    <a href="#" data-value="2" class="">Link</a>
+                </div>
+            </div>
+            in
+            <div class="inline-dropdown">
+                <span class="selected-value" id='selected-value'>California</span>
+                <div class="options">
+                    <a href="#">USA</a>
+                    <a href="#">German</a>
+                </div>
+            </div>
+        </h2>
+        <script>
+            let links = document.querySelectorAll("section.describtion-btn .options a");
+
+            links.forEach(link => {
+                        link.addEventListener('click', function () {
+
+                            links.forEach(link => link.classList.remove('active'));
+                            this.classList.add('active');
+
+                            this.closest('.inline-dropdown').querySelector('.selected-value').innerText = this.innerText;
+                        })
+                    });
+        </script>
+
+        <button>INQUIRE NOW</button>
+    </section>
+
+    //
+    <!-- <section class="about-section">
+//         <div class="row-about">
+//             <div class="top-left-paragraph">
+//                 <span>ABOUT OPEN VENUES</span>
+//                 <span>Since 2015, we've crafted hundreds of immersive, sustainable experiences in fragile, ecologically significant places across the U.S. We constantly evolve our practices and processes to ensure we always leave venues in extraordinary places better than we found them. From a commitment to no single use plastics to protecting venues' natural resources, we're devoted to protecting and nurturing the properties and places that nurture us.
+//                 </span>
+//             </div>
+//             <img class="chairs-in-castle" src="./imgs/chairs-in-castle.svg" alt="">
+//         </div>
+//         <img class="chairs-desert" src="./imgs/chairs.svg" alt="">
+//         <img class="frame" src="./imgs/Frame.svg" alt="">
+//     </section>
+
+//     <section class="titles-img">
+//         <div class="left-titles">
+//             <h3>Venue Scouting</h3>
+//             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span><br>
+//             <a href="#">LEARN MORE</a>
+//         </div>
+//         <div class="right-img">
+//             <img src="./imgs/right-img.svg" alt="">
+//         </div>
+//     </section>
+
+//     <section class="content-box">
+//         <div class="left-box">
+//             <img src="./imgs/left-img.svg" alt="">
+//         </div>
+//         <div class="right-box">
+//             <h3>Become a Venue Partner</h3>
+//             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</span><br>
+//             <a href="#">LEARN MORE</a>
+//         </div>
+//     </section>
+
+//     <section class="footer">
+//         <div class="first-cotnent">
+//             <img src="./imgs/white-open.svg" alt="">
+//             <span class="stay">STAY IN THE KNOW</span>
+//             <div class="mail-arrow">
+//                 <span class="mail">johnny.appleseed@gmail.com</span>
+//                 <img src="./imgs/circle-arrow.svg" alt="">
+//             </div>
+//         </div>
+//         <div class="cover">
+//         <div class="middle-content">
+//             <span class="first-venues">VENUES</span>
+//             <div class="list">
+//                 <div style="margin-right: 30px;">
+//                     <span class="styled">All Venues</span>
+//                     <span class="styled">Search</span>
+//                 </div>
+//                 <div>
+//                     <span class="styled">List Your Venue</span>
+//                     <span class="styled">Scouting Service</span>
+//                 </div>
+//             </div>
+            
+//             <div>
+//                 © 2022 Open Venues. All Rights Reserved.<br> 
+//                <span>Website Design & Development by <a href="">Alex & Co.</a></span>
+//             </div>
+//         </div>
+//         <div class="last-content">
+//             <span class="first-brands">Brands</span>
+//             <div>
+//                 <span>Cloth & Flame</span>
+//                 <span>Gather Round</span>
+//             </div>
+//             <div>
+//                 <a href=""><img src="./imgs/logo-facebook.svg" alt=""></a>
+//                 <a href=""><img src="./imgs/logo-instagram.svg" alt=""></a>
+//             </div>
+//         </div>
+//     </div> 
+// </section>
+    <script>
+        
+    function classToggle() {
+        const mobileSidebar = document.querySelector('.mobile-sidebar')
+        
+        if(mobileSidebar.classList.contains("open")){
+            mobileSidebar.classList.remove("open");
+        }else{
+            mobileSidebar.classList.add("open");
+        }
+      }
+      
+      document.querySelector('.checkbtn')
+        .addEventListener('click', classToggle);
+
+    function close_sidebar() {
+      let o = document.querySelector('.mobile-sidebar');
+      
+      if (o.classList.contains('open')) {
+        o.classList.remove('open');} else {o.className.add('open')}
+    }   
+    </script>
+</body>
+</html>
